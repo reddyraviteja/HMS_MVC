@@ -1,0 +1,39 @@
+@model HMS_MVC_Two.Models.LoginViewModel;
+
+<h2 class="text-center">User Login</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form asp-action="Login" method="post">                
+                <div class="mb-3">
+                    <strong><label asp-for="EmailId" class="form-label"></label></strong>
+                    <input asp-for="EmailId" class="form-control" />
+                    <span asp-validation-for="EmailId" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <strong><label asp-for="Password" class="form-label"></label></strong>
+                    <input asp-for="Password" type="password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <strong><label asp-for="Role" class="form-label"></label></strong>
+                    <select asp-for="Role" class="form-control">
+                        <option value="Patient">Patient</option>
+                        <option value="Doctor">Doctor</option>
+                        <option value="Admin">Admin</option>
+                    </select>
+                    <span asp-validation-for="Role" class="text-danger"></span>
+                </div>
+
+                <div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+
+            </form>
+            <div asp-validation-summary="All" class="text-danger"></div>
+        </div>
+    </div>
+</div>
