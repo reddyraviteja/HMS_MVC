@@ -1,0 +1,48 @@
+@model HMS_MVC_Two.Models.ApplicationUser
+
+@{
+    ViewData["Title"] = "Edit Profile";
+    Layout = "~/Areas/Patient/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container mt-4">
+    <h2>Edit Profile</h2>
+    <hr />
+
+    <form asp-action="EditProfile" method="post" class="needs-validation">
+        <input type="hidden" asp-for="UserId" />
+
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Email" class="form-label"></label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Phone" class="form-label"></label>
+            <input asp-for="Phone" class="form-control" />
+            <span asp-validation-for="Phone" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Password" class="form-label">New Password (Optional)</label>
+            <input asp-for="Password" class="form-control" />
+            
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="ConfirmPassword" class="form-label">Confirm New Password</label>
+            <input asp-for="ConfirmPassword" class="form-control" />
+            
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+    </form>
+</div>
