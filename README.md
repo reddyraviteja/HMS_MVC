@@ -1,5 +1,3 @@
-Corrected Version of Your List
-
 Followed MVC Architecture for clear separation of code.
 
 Created Entities (ApplicationUser, Appointment, Doctor) to represent database tables.

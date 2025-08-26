@@ -135,3 +135,4 @@ C:\Users\ravi.raja\Desktop\HMS_MVC_Two\obj\Debug\net8.0\HMS_MVC_Two.pdb
 C:\Users\ravi.raja\Desktop\HMS_MVC_Two\obj\Debug\net8.0\HMS_MVC_Two.genruntimeconfig.cache
 C:\Users\ravi.raja\Desktop\HMS_MVC_Two\obj\Debug\net8.0\ref\HMS_MVC_Two.dll
 C:\Users\ravi.raja\Desktop\HMS_MVC_Two\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ravi.raja\Desktop\HMS_MVC_Two\obj\Debug\net8.0\HMS_MVC_Two.sourcelink.json
